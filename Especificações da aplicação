@@ -1,0 +1,36 @@
+Sistema de Banco da Tivic: (SBT[rsrs]) 
+
+Modulos do sistema:
+
+--- User
+ -> id:String
+ -> name:String
+ -> password:String
+ -> idAccount:String
+ -> createdAt:Timestamp with time zone
+ -> updatedAt:Timestamp with time zone 
+ 
+--- Account
+ -> id:String
+ -> balance:Number
+ -> createdAt:Timestamp with time zone
+ -> updatedAt:Timestamp with time zone 
+
+Services:
+--- User
+ -> Create
+ -> List
+ 
+--- Account
+ -> CRUD
+ -> verifyBalance():Number
+ -> deposit():void
+ -> withdraw():void
+ 
+Banco de dados: 
+
+ -> sqlite
+ 
+Front-end:
+
+ -> Angular 8+
